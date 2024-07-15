@@ -1,0 +1,44 @@
+/* reset */
+*{
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+   font-family: 'Arial';
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+
+img{
+   display: block;
+   max-width: 100%;
+}
+
+/* o site todo se baseia nessa divisão */
+.gridPrincipal{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 100px;
+   align-items: start;
+}
+
+.maxWidth{
+   max-width: 1200px;
+   margin: 0px auto;
+}
+
+/* responsividade */
+@media (width <=1000px){
+   .gridPrincipal{
+      gap: 60px;
+   }
+}
+
+@media (width <= 800px){
+   .gridPrincipal{
+      grid-template-columns: 1fr;   
+      gap: 20px;
+   }
+}

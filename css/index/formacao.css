@@ -1,0 +1,122 @@
+#formacao > div{
+   padding: 60px 20px;
+}
+
+.formacaoConteudo > p{
+   margin-bottom:40px;
+   font-size: 1.2rem;
+}
+
+.cartoesFormacao{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+   margin-bottom: 40px;
+}
+
+.cartoesFormacao li{
+   border-radius: 4px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0px 8px;
+   padding: 20px
+}
+
+.cartoesFormacao p{
+   text-transform: uppercase;
+   font-size: 0.875rem;
+}
+
+.cartoesFormacao h4{
+   margin-bottom: 20px;
+   font-size: 1.375rem;
+   position: relative;
+
+   grid-column: 1/-1;
+}
+
+.cartoesFormacao h4::before{
+   content: '';
+   display: block;
+   height: 100%;
+   width: 4px;
+   background: linear-gradient(#8761F5, #5200FF);
+   border-radius: 1px;
+   position: absolute;
+   left: calc(-1.25rem - 4px) ;
+}
+
+
+.cartoesFormacao span{
+   text-align: right;
+   font-size: 0.875rem;
+}
+
+
+.cartoesFormacao span{
+   margin-bottom: 6px;
+}
+
+.cartoesFormacao span:last-child{
+   grid-column: 1/-1;
+   text-align: left;
+   text-transform: uppercase;
+   margin-bottom: 0px;
+}
+
+.formacaoConteudo h3{
+   text-transform: uppercase;
+   font-size: 0.875rem;
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.formacaoConteudo h3::before{
+   content: '';
+   display: block;
+   height: 16px;
+   width: 16px;
+   background: url('../../imagens/tradutorSimbolo.svg');
+   position: absolute;
+   top: 0px;
+   left: -24px;
+}
+
+.formacaoIdiomas li{
+   font-size: 1.2rem;
+   margin-bottom: 12px;
+}
+
+.formacaoIdiomas li:last-child{
+   margin-bottom: 0px;
+}
+
+/* responsividade */
+@media (width<=1000px){
+   .cartoesFormacao{
+      gap:40px;
+   }
+
+   .cartoesFormacao h4{
+      font-size: 1.125rem;
+   }
+}
+
+@media (width<= 800px){
+   .formacaoConteudo h3{
+      position: initial;
+      display: flex;
+      gap: 8px;
+}
+   
+   .formacaoConteudo h3::before{
+      position: initial;
+   }
+}
+
+@media (width<= 500px){
+   .cartoesFormacao{
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+}

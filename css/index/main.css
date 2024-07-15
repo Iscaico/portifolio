@@ -1,0 +1,70 @@
+#main{
+   padding: 40px 20px;
+}
+
+.mainConteudo{
+   align-self: center;
+}
+
+.mainConteudo h1{
+   font-size: 4.5rem;
+   position: relative;
+   margin-bottom: 8px;
+}
+
+.mainConteudo h1::before{
+   content: '';
+   width: 36px;
+   height: 10px;
+   background-image: url('../../imagens/detalheRoxo.svg');
+   display: block;
+
+   position: absolute;
+   top: -12px;
+   left: 4px;
+}
+
+.mainConteudo p{
+   font-size: 1.5rem;
+}
+
+/* responsividade */
+@media (width <= 1000px){
+   #main h1{
+      font-size: 3rem;
+      max-width: 16ch;
+   }
+}
+
+@media (width <= 800px){
+   #main.gridPrincipal{
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+   }
+
+   #main h1{
+      font-size: 2rem;
+   }
+
+   .mainConteudo h1::before{
+      left: 2px;
+   }
+}
+
+@media (width <= 500px){
+   #main.gridPrincipal{
+      grid-template-columns: 1fr;
+      gap: 0px;
+      padding: 20px 20px;
+      margin-top: 20px;
+   }
+
+   #main > div > img{
+      display: none;
+   }
+
+   #main h1{
+      max-width: 22ch;
+      margin-bottom: 4px;
+   }
+}

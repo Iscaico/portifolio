@@ -1,0 +1,64 @@
+/* cores em variáveis */
+:root{
+   --corFundo00: #000000;
+   --corFundo01: #141414;
+
+   --corTexto00: #000000;
+   --corTexto01: #FFFFFF;
+   --corTexto02: rgba(0,0,0,0.5);
+   --corTexto03: #8C8C8C; 
+   --corTexto04: rgba(255,255,255, 0.15);
+   --corTexto05: rgba(255,255,255, 0.4);
+   --corTexto06: rgba(0,0,0, 0.5);
+   --corTexto07: #8F8F8F;
+   --corTexto08: #525252; 
+   --corTexto09: #5200FF;
+}
+
+.corFundo00{
+   background-color: var(--corFundo00);
+}
+
+.corFundo01{
+   background-color: var(--corFundo01);
+}
+
+.corTexto00{
+   color: var(--corTexto00);
+}
+
+.corTexto01{
+   color: var(--corTexto01);
+}
+
+.corTexto02{
+   color: var(--corTexto02);
+}
+
+.corTexto03{
+   color: var(--corTexto03);
+}
+
+.corTexto04{
+   color: var(--corTexto04);
+}
+
+.corTexto05{
+   color: var(--corTexto05);
+}
+
+.corTexto06{
+   color: var(--corTexto06);
+}
+
+.corTexto07{
+   color: var(--corTexto07);
+}
+
+.corTexto08{
+   color: var(--corTexto08);
+}
+
+.corTexto09{
+   color: var(--corTexto09);
+}

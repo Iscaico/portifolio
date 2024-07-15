@@ -1,0 +1,67 @@
+#sobreMim{
+   padding: 40px 20px 60px 20px;
+} 
+
+#sobreMim > div > p{
+   font-size: 1.2rem;
+   margin-bottom: 40px;
+}
+
+#sobreMim h3{
+   font-size: 2rem;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.postersContainer ul{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.postersContainer ul img {
+   margin-bottom: 8px;
+}
+
+.postersContainer ul li{
+   transition: 0.3s;
+}
+
+.postersContainer ul li:hover {
+   transform: scale(1.03);
+}
+
+.postersContainer ul p{
+   font-size: 1.1rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+/* responsividade */
+@media (width <= 600px){
+   #sobreMim h3{
+      font-size: calc(8vw + -16px);;
+      text-transform: uppercase;
+      margin-bottom: 20px; 
+   }
+
+   .postersContainer ul p{
+      font-size: 1rem;
+      font-weight: normal;
+   }
+}
+
+@media (width <= 500px){
+   #sobreMim h3{
+      font-size: 1.5rem;
+   }
+
+   .postersContainer ul{
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .postersContainer ul li{
+      max-width: 160px;
+   }
+}

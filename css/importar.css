@@ -1,0 +1,15 @@
+/* importar todos os css */
+/* gerais */
+@import './gerais.css';
+@import './utilitario/cores.css';
+
+/* objetos */
+@import './objetos/titulo.css';
+
+/* divisões */
+@import './index/header-footer.css';
+@import './index/main.css';
+@import './index/sobreMim.css';
+@import './index/formacao.css';
+@import './index/portifolio.css';
+@import './index/contato.css';
